@@ -1,0 +1,248 @@
+*{
+     margin: 0;
+     padding: 0;
+    
+    
+}
+
+.header{
+     min-height: 100vh;
+     width: 100%;
+     background-image:linear-gradient(rgba(22, 32, 67, 0.7)),url("gujarat_technological_university_ahmedbabd_cover.jpg");
+     background-position:center;
+     background-size: cover;
+     position: relative;
+     
+}
+nav{
+     display: flex;
+     padding: 2% 5%;
+     justify-content: space-between;
+     align-items:right;
+     
+     
+
+}
+
+/* Logo absolute on top-left */
+.logo {
+  position: absolute;
+  top: 1px;    /* distance from top */
+  left: 1px;   /* distance from left */
+  height: 200px; /* adjust size */
+  width: auto;
+  z-index: 9999 /* keeps it above background */
+}
+
+
+.nav-links{
+     flex: 1;
+     text-align: right;
+
+}
+.nav-links ul li{
+      list-style: none;
+      display: inline-block;
+      padding: 10px 12px;
+      position: relative;
+}
+.nav-links ul li::after{
+     content:'' ;
+     width: 0%;
+     height: 2px;
+     background: #f44336;
+     display: block;
+     margin: auto;
+     transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+     width: 100%;
+}
+
+ .nav-links ul li a{
+      color: #fff;
+      text-decoration: none;
+      font-size:13px;
+ }
+ .text-box{
+     width: 90%;
+     color: #51e616;
+     position:absolute;
+     top:50%;
+     left:50%;
+     transform:  translate(-50%,-50%);
+     text-align: center;
+     
+ }
+ .text-box h1{
+     font-size: 65px;
+ }
+
+ .text-box p{
+     margin: 10px 0 40px;
+     font-size: 15px;
+     color: white;
+ }
+
+.hero-btn{
+          display: inline-block;
+          text-decoration: none;
+          color:#ffffff;
+          border:1px solid #fff ;
+          padding: 12px 34px;
+          font-size:15px ;
+          background: transparent;
+          position: relative;
+          cursor: pointer;          
+     }
+ hero-btn:hover{
+     border: 1px solid #f44336;
+     background: #f44336;
+     transition: 1s;
+     
+ }
+ .hero-btn:hover {
+  background-color: #147226 !important;
+  transition: 1s;
+     
+}
+nav .fa{
+     display: none;
+}
+@media(max-width:700px){
+     .text-box h1{
+          font-size: 20px; 
+     } 
+    
+ .nav-links ul li{
+     display: block;
+ }
+.nav-links{
+     position: absolute;
+     background:#f44336;
+     height: 100vh;
+     width:200px;
+     top:0;
+     right:0;
+     text-align: left;
+     z-index: 2;
+
+}
+nav.fa{display: block;
+     color:#fff ;
+     margin: 10px;
+     font-size: 22px;
+     cursor: pointer;
+}
+}
+
+.course{
+     width: 80%;
+     margin: auto;
+     text-align: center;
+     padding-top: 100px;
+}
+h1{
+     font-size: 37px;
+     font-weight: 600;
+}
+p{
+      color: #000000;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 22px;
+      padding:10px;
+}
+
+     .row {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;   /* <-- this adds spacing between boxes */
+}
+
+
+.cours-col{
+   
+     background-color: #d5d4d4;
+     border-radius: 10px;
+     margin-bottom: 5%;
+     padding: 20px 12px;
+     box-sizing:border-box;
+
+}
+
+
+.cours-col:hover{
+     box-shadow: 0 0 20px 0px rgba(0,0,0,0.2) ;
+
+}
+
+
+   
+  .cours-coll img {
+  width: 300px;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+.img-box {
+  position: relative;
+  width: 100%;
+}
+
+.img-box img {
+  width: 350px;
+  max-height: 550px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+/* Transparent text overlay at bottom */
+.img-caption {
+  position: absolute;
+  bottom: 0;               /* stick to bottom of image */
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 25px;
+  border-radius: 0 0 8px 8px; /* match corners */
+}
+
+
+.campus{
+     width: 80%;
+     margin: auto;
+     text-align: center;
+     padding-top: 50px;
+     
+     
+}
+
+
+.footer {
+  width: 100%;
+  background: #1bb3a9;
+  color: #000000fe;
+  text-align: center;
+  padding: 15px 0;
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  flex: 1; 
+}
